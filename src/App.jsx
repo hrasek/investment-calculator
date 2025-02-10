@@ -1,11 +1,14 @@
-import Header from './components/Header'
-import InputGroup from './components/InputGroup'
+
+import Header from './components/Header/Header'
+
+
 
 function App() {
   return (
     <>
     <Header/>
-    // <h1>React Investment Calculator</h1>
+
+
     <main>
 
       
@@ -14,6 +17,7 @@ function App() {
     </main>
     
     </>
+
   )
 }
 
