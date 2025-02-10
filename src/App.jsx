@@ -1,9 +1,8 @@
-import Header from './components/Header'
+import Header from './components/Header/Header'
 
 function App() {
   return (
     <Header/>
-    // <h1>React Investment Calculator</h1>
   )
 }
 
