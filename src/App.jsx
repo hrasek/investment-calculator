@@ -1,24 +1,16 @@
-
-import Header from './components/Header/Header'
-
-
+import Header from "./components/Header/Header";
+import InputGroup from "./components/InputGroup";
 
 function App() {
   return (
     <>
-    <Header/>
+      <Header />
 
-
-    <main>
-
-      
-        <InputGroup label="INITIAL INVESTMENT"/>
-      
-    </main>
-    
+      <main>
+        <InputGroup label="INITIAL INVESTMENT" />
+      </main>
     </>
-
-  )
+  );
 }
 
-export default App
+export default App;

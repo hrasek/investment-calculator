@@ -1,8 +1,8 @@
 export default function UserInput({ label }) {
-    return (
-        <p>
-            <label>{label}</label>
-            <input type="number" required/>
-        </p>
-    )
+  return (
+    <p>
+      <label>{label}</label>
+      <input type="number" required />
+    </p>
+  );
 }
