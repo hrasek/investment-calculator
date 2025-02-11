@@ -1,18 +1,12 @@
 import { calculateInvestmentResults, formatter } from "./../util/investment";
 
-const initialInvestment = 15000;
-const annualInvestment = 900;
-const expectedReturn = 5.5;
-const duration = 12;
-
-const data = calculateInvestmentResults({
-  initialInvestment: initialInvestment,
-  annualInvestment: annualInvestment,
-  expectedReturn: expectedReturn,
-  duration: duration,
-});
-
-export default function Result() {
+export default function Result({ calculationInput }) {
+  const data = calculateInvestmentResults({
+    initialInvestment: calculationInput.initialInvestment,
+    annualInvestment: calculationInput.annualInvestment,
+    expectedReturn: calculationInput.expectedReturn,
+    duration: calculationInput.duration,
+  });
   return (
     <table id="result">
       <thead>
@@ -34,13 +28,6 @@ export default function Result() {
             <th>{formatter.format(row.investedCapital)}</th>
           </tr>
         ))}
-        {/* <tr>
-          <th>1</th>
-          <th>$16,725</th>
-          <th>$825</th>
-          <th>$825</th>
-          <th>$15,900</th>
-        </tr> */}
       </tbody>
     </table>
   );
